@@ -20,7 +20,8 @@ const DisplayEntries = (props) => {
           </tr> */}
           {props.parentEntries.map((entry ,index) => {
             return (
-              <tr>
+                // key={index} provides unique for each entry in html table
+              <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{entry.weight}</td>
                 <td>{entry.date}</td>
