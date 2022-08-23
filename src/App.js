@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
+import AddEntryForm from './Components/AddEntry/AddEntryForm';
 
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
   // Props allow you to pass data to components
 
   // Anytime you want JS you have to use {} in html
-  const [entries, setEntries] = useState([{weight: null, date: '11-23-2021'}]); 
+  const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}]); 
   return (
     <div >
       
       <DisplayEntries parentEntries={entries}/>
+      <AddEntryForm/>
   
     </div>
   );
