@@ -18,7 +18,7 @@ const DisplayEntries = (props) => {
             <td>175</td>
             <td>11-23-2021</td>
           </tr> */}
-          {entries.map((entry ,index) => {
+          {props.parentEntries.map((entry ,index) => {
             return (
               <tr>
                 <td>{index + 1}</td>
